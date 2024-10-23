@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(img/coca_fondo.png);
+    background-size: cover; /*la imagen cubrirá toda la pantalla*/
+    background-repeat: no-repeat; /*la imagen no se repetirá*/
+    background-position: center center; /*centra la imagen en la pantalla*/
+    background-attachment: fixed;  /*la imagen de fondo permanecerá fija sin importar si alejas o acercas*/
+}
+
+main{
+    border: 1px solid black;
+    width: 85%;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+header{
+    padding: 5px;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+#logo img{
+    width: 600px;
+}
+
+hr{
+    margin: 10px;
+}
+
+#menu{
+    list-style: none; /*quitamos viñetas*/
+    display: flex; /*paso a vertical*/
+    flex-direction: row; /*ya esta predeterminado*/
+    justify-content: center; /*se alinea de manera horizontal*/
+    /*align-items: center;  se alinea de manera vertical*/
+}
+
+#menu li{
+    margin: 6px; /*al usar esta funcion separamos las viñetas*/
+}
+
+#menu li a{
+    text-decoration: none; /*quita el subrayado*/
+    padding: 10px;
+    color: black;
+    font-size: 18px;
+}
+
+#menu li a:hover{
+    color: rgb(255, 30, 30); /*al pasar con el cursor por encima cambia al color seleccionado*/
+}
+
+#imagen_central{
+    display: flex;
+    justify-content: center; /*se alinea de manera horizontal*/
+}
+
+#imagen_central img{
+    width: 800px;
+    height: 340px;
+}
+
+h2{
+    margin: 9px;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+p{
+    font-size: 24px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    color: rgb(29, 28, 28);
+}
+
+.parrafo{
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 25px;
+    align-items: center;
+}
+
+.dos{
+    display: flex;
+}
+
+.dos img{
+    width: 200px;
+    margin-right: 10px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+#redes{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 10px;
+    width: 85%;
+}
+
+#redes img{
+    width: 30px;
+    border-radius: 18px;
+    padding: 12px;
+}
+
+.imagenes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+}
+
+.imagenes img{
+    width: 340px;
+    padding: 8px;
+}
+
+
+.video_descargado{
+    position: relative;
+    padding-bottom:  56.25%; /*16:9*/
+    height: 0;
+}
+
+video{
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    width: 90%;
+    height: 90%;
+}
+
+#contenido_videos{
+    margin: 20px;
+}
